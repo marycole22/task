@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contain{
+    background: linear-gradient(to right, #6d126d, #1f666f, #8e8e13);
+    width: 100%;
+    height: 100vh;
+    
+}
+.todo header{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.todo header h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+.todo .task{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #6d126d2b;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.todo .task input{
+    width: 60% ;
+    height: 40px ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+}
+.todo .task button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+    padding:0.7rem ;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+.todo .task button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.contain h2 span{
+    color: #fff;
+    padding-left: 50px;
+    font-size: 40px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+    background-color: #131010d0;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.input-control textarea{
+    width: 350px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.input-control textarea:hover{
+    border: 1px solid gray;
+}
+.input-control .edit{
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    
+}
+.input-control .edit i{
+    margin:  auto 0.5rem;
+    
+}
+.input-control .edit .deleteBtn:hover{
+    color: #c32f2f;
+}
+.input-control .edit .editBtn:hover{
+    color: aquamarine;
+}
+
+.update{
+    display: none;
+    margin: 0.6rem;
+}
+.update button{
+    cursor: pointer;
+    margin: auto 0.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 1rem ;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    width: 75px;
+}
+.update button:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #6abb41;
+}
+
+@media (max-width:750px) {
+    .item{
+        margin: 0.8rem;
+
+
+    }
+    .input-control textarea{
+        width: 250px;
+    }
+    .input-control .edit{
+        margin-top: 0.5rem;
+    }
+    .update{
+        margin: auto 0.8rem;
+       display: none;
+       flex-direction: column;
+    }
+    .update button{
+        margin-bottom: 0.5rem;
+
+    }
+    .todo header{
+        order: 3;
+    }
+    .contain h2{
+        order: 4;
+    }
+
+}
+
+
+
+
